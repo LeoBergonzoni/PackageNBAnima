@@ -3,6 +3,8 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 
+const ASSET_BASE = import.meta.env.BASE_URL;
+
 const canvas = document.getElementById('c');
 canvas.style.touchAction = 'none';
 canvas.setAttribute('aria-label', 'Animazione bustina NBAnima');
@@ -227,15 +229,15 @@ function createPack(frontTexture, backTexture) {
 }
 
 // --- Setup assets -----------------------------------------------------------
-const backTex = loadTex('/cards/Back.png');
-const packFrontTex = loadTex('/Package/packagefronte.png');
-const packBackTex = loadTex('/Package/packageretro.png');
+const backTex = loadTex(`${ASSET_BASE}cards/Back.png`);
+const packFrontTex = loadTex(`${ASSET_BASE}Package/packagefronte.png`);
+const packBackTex = loadTex(`${ASSET_BASE}Package/packageretro.png`);
 
 const fronts = [
-  '/cards/MangaWembyAmazingBlock.png',
-  '/cards/PinkRiriCourtSide.png',
-  '/cards/MangaPrimeMJJumpGold.png',
-  '/cards/MangaReggieChokeGold.png',
+  `${ASSET_BASE}cards/MangaWembyAmazingBlock.png`,
+  `${ASSET_BASE}cards/PinkRiriCourtSide.png`,
+  `${ASSET_BASE}cards/MangaPrimeMJJumpGold.png`,
+  `${ASSET_BASE}cards/MangaReggieChokeGold.png`,
 ];
 
 // Bustina che copre le cards
