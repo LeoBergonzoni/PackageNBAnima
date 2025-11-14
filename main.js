@@ -227,15 +227,15 @@ function createPack(frontTexture, backTexture) {
 }
 
 // --- Setup assets -----------------------------------------------------------
-const backTex = loadTex('./cards/Back.png');
-const packFrontTex = loadTex('./Package/packagefronte.png');
-const packBackTex = loadTex('./Package/packageretro.png');
+const backTex = loadTex('/cards/Back.png');
+const packFrontTex = loadTex('/Package/packagefronte.png');
+const packBackTex = loadTex('/Package/packageretro.png');
 
 const fronts = [
-  './cards/MangaWembyAmazingBlock.png',
-  './cards/PinkRiriCourtSide.png',
-  './cards/MangaPrimeMJJumpGold.png',
-  './cards/MangaReggieChokeGold.png',
+  '/cards/MangaWembyAmazingBlock.png',
+  '/cards/PinkRiriCourtSide.png',
+  '/cards/MangaPrimeMJJumpGold.png',
+  '/cards/MangaReggieChokeGold.png',
 ];
 
 // Bustina che copre le cards
